@@ -1,5 +1,392 @@
-*{
+/* global section start*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.primary-bg {
+    background: rgb(255, 248, 243);
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 5px;
+    background: rgb(253, 110, 10);
+    padding: 18px 35px;
+    border: none;
+    cursor: pointer;
+}
+
+/* global section end */
+/* header section start */
+.header-1 {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#first-header {
+    background-image: url(/images/developer.png), url(/images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 230px 70px 180px;
+}
+
+.header-menu h3 {
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-menu h3 span {
+    color: rgb(253, 110, 10);
+}
+
+.header-menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu>ul li {
+    list-style: none;
+    margin-right: 58px;
+}
+
+.header-menu>ul li a {
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 27px 30px 0 180px;
+}
+
+.header-banner .banner-content {
+    width: 585px;
+}
+
+.header-banner .banner-content h3 {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-banner .banner-content h1 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-banner .banner-content p {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.header-banner .banner-content .btn-2 {
+    color: rgb(253, 110, 10) !important;
+    background: #fff !important;
+    border: 1px solid rgb(253, 110, 10);
+    margin-left: 47px;
+}
+
+/* main-content */
+#main-content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#main-content .about-section {
+    height: 550px;
+    margin: 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    width: 827px;
+    height: 295px;
+    border: 1px solid black;
+    background: #fff;
+}
+
+.about-content h3 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.about-content p {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-informations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-informations p,
+h4 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.service-top h1 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.service-top p {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.service-item {
+    padding: 30px;
+    width: 267px;
+    border-radius: 5px;
+
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.service-item h3 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-top: 20px;
+
+}
+
+.service-item p {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.resume-contents {
+    display: flex;
+    gap: 40px;
+}
+
+.resume-section>h3 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 130px;
+}
+
+.contents-1 .content {
+    max-width: 511px;
+}
+
+.content h1 {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content h3 {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.content h5 {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.resume-btn {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 135px;
+}
+
+.footer {
+    height: 780px;
+}
+
+.footer-section {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 130px 0;
+    display: flex;
+    gap: 100px;
+}
+
+.footer-content h1 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+
+.footer-content p {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-icon i {
+    color: rgb(253, 110, 10);
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.footer-form h2 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+}
+
+input {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 461px;
+    height: 64px;
+    border: none;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 461px;
+    height: 180px;
+    border: none;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    padding-top: 20px;
 }
